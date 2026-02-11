@@ -7,3 +7,7 @@ My implementations of RL algorithms.
 * In Value Iteration, (V(s)) is effectively derived from (Q(s,a)) via the max operator. After convergence, the same ends up being true for Policy Iteration, even though it has a separate Policy Evaluation step. They’re both “hunting” for the same optimal Bellman equation, just taking different routes.
 * In my experiments, with a discount factor (gamma = 1), Value Iteration converges almost immediately, while Policy Iteration struggles. This seems to be because VI doesn’t try to fully solve the environment at each step. It performs a single sweep over states (almost like a “lazy PI”). Policy Iteration, on the other hand, runs into instability during Policy Evaluation as values grow large and become harder to stabilise.
 * That said, this behaviour may be specific to small, discrete environments, and also an issue of my iterative implementation, as most references suggest PI should converge in fewer iterations than VI.
+
+### SARSA
+* Is an on-policy TD method since it updates the Q-table based on the action taken, i.e new Q-value for a state-action pair is based on the action a' taken when in state s'.
+* State Action Rewards nextState nextAction (SARSA).
