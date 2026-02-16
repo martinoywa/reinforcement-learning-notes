@@ -12,4 +12,4 @@ My implementations of RL algorithms.
 * SARSA is an on-policy TD method since it updates the Q-table based on the action taken, i.e new Q-value for a state-action pair is based on the action a' taken when in state s', while Q-Learning is an off-policy method since updates to the Q-table are independent of the learned policy, i.e new Q-value for a state-action pair is obtained from s' regardless of the action taken.
 * State Action Rewards nextState nextAction (SARSA).
 * Given that Q-Learning updates the Q-table using the maximum Q-value of the next state, it tends to have much higher Q-values than SARSA. (obviously :-)). It seems that in Q-Learning, the Q-table gets updated using the state-value of the s', drawing some parallels to Value Iteration.
-* Across all the algorithms, the learned state-values are highest closer to the goal state
+* Across all the algorithms, the learned state-values are highest closer to the goal state.

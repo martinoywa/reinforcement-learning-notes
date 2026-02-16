@@ -7,10 +7,10 @@ class GridWorldEnv(gym.Env):
 
     def __init__(
             self,
-            n_rows=3,
-            n_cols=3,
+            n_rows=5,
+            n_cols=5,
             start_state=(0, 0),
-            goal_state=(2, 2),
+            goal_state=(4, 4),
             trap_states=(),
             step_reward=-1.0,
             goal_reward=10.0,
