@@ -19,3 +19,4 @@ My implementations of RL algorithms.
 * State Action Rewards nextState nextAction (SARSA).
 * Given that Q-Learning updates the Q-table using the maximum Q-value of the next state, it tends to have much higher Q-values than SARSA. (obviously :-)). It seems that in Q-Learning, the Q-table gets updated using the state-value of the s', drawing some parallels to Value Iteration.
 * Across all the algorithms, the learned state-values are highest closer to the goal state.
+* In a stochastic environement, SARSA, hyperparameters play a very crucial role on whether the agent will converge. An epsilon of less than 0.5 almost always leads to nothing because it tries to exploit more than explore early? QLearning manages well even with lower epsilon.
